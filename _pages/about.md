@@ -6,7 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am **Lanyue Tang**, currently at **Polytechnique Montréal**.
+I am currently a Ph.D. student in Applied Mathematics and Engineering. I am co-advised by Antoine Legrain and Antoine Landry-Lesage.
+
 
 My research interests include **optimization** and **machine learning**, particularly optimization-driven modeling.
 
