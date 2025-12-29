@@ -8,7 +8,56 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
+
+<h2 class="archive__subtitle">Learning notes</h2>
+
+<h3>Optimization</h3>
+<ul>
+  <li><em>(to be added)</em></li>
+</ul>
+
+<h3>Machine Learning</h3>
+
+<h4>Reinforcement Learning</h4>
+<ul>
+{% assign rl_notes = site.data.rl_notes | sort: "date" | reverse %}
+{% for n in rl_notes %}
+  <li>
+    <strong>{{ n.title }}</strong>
+    — <a href="{{ n.pdf }}">PDF</a>
+    {% if n.date %}<span style="opacity:0.6;"> ({{ n.date }})</span>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<hr/>
+
+<h2 class="archive__subtitle">Paper notes</h2>
+
+<ul>
+  <li>
+    <strong>Class-Balanced Loss</strong>
+    <br/>
+    <span style="opacity:0.75;">
+      Based on Cui et al., <em>CVPR 2019</em>
+    </span>
+    — <a href="/files/notes/paper/class_based_loss.pdf">PDF</a>
+  </li>
+
+  <li>
+    <strong>Graph Laplacian, Fourier Transform, and Spectral Filtering</strong>
+    <br/>
+    <span style="opacity:0.75;">
+      Notes on graph signal processing and spectral GCN derivations
+    </span>
+    — <a href="/files/notes/paper/graphML.pdf">PDF</a>
+  </li>
+</ul>
+
+
+<hr/>
+
+<!-- {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
@@ -16,4 +65,4 @@ redirect_from:
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->

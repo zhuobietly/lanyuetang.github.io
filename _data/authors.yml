@@ -1,13 +1,13 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+  name        : "Lanyue Tang"
+  uri         : "https://lanyuetang.github.io"
+  email       : "lanyue.tang@polymtl.ca"
+  bio         : "Research interests include optimization, Machine Learning."
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  twitter     : "lanyuetang"
+  google_plus : "Lanyue Tang"
 
 Name2 Name2:
   name        : "Name2 Name2"

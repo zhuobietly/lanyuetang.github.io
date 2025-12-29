@@ -9,14 +9,14 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Lanyue Tang"  # Update this with your site title
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "Lanyue Tang"  # Update this with your name, used in the page title and author profile
+description              : &description "Lanyue Tang's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : http://localhost:4000 # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "lanyuetang/lanyuetang.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,18 +24,18 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Lanyue Tang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Research interests include optimization, Machine Learning."
+  location         : "Montreal, Canada"
+  employer         : "Polytechnique Montreal"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "lanyue.tang@polymtl.ca" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=975Mb7UAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/yourorcidurl"
@@ -233,7 +233,12 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  learning_notes:
+    output: true
+    permalink: /notes/learning/:path/
+  paper_notes:
+    output: true
+    permalink: /notes/paper/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
